@@ -1,0 +1,250 @@
+[medical-department-fantasycity-final.html](https://github.com/user-attachments/files/21820063/medical-department-fantasycity-final.html)
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Department Fantasy City</title>
+  <meta name="description" content="12-stufiges Rangsystem und Ausbildungspläne für das Medical Department in GTA 5 Roleplay.">
+  <style>
+    :root{
+      --bg:#0f1320;
+      --card:#151a2c;
+      --text:#e7ecff;
+      --muted:#9aa3c7;
+      --accent:#7aa2ff;
+      --accent-2:#72e6b1;
+      --line: #222842;
+      --ok:#72e6b1;
+      --warn:#ffd166;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Inter,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
+    a{color:var(--accent)}
+    .container{max-width:1100px;margin:0 auto;padding:32px 16px 80px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .title{display:flex;gap:12px;align-items:center}
+    .title .logo{font-size:28px}
+    h1{font-size:clamp(24px,3vw,36px);margin:0}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:linear-gradient(180deg,var(--card),#0f1427)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px}
+    @media(min-width:720px){
+      .card.span-6{grid-column:span 6}
+      .card.span-4{grid-column:span 4}
+    }
+    h2{margin:6px 0 8px;font-size:22px}
+    h3{margin:8px 0 6px;font-size:18px}
+    .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:#11162a;font-size:12px;color:var(--muted)}
+    .list{margin:8px 0 0 0;padding-left:18px}
+    .rank{display:flex;align-items:flex-start;gap:12px;padding:10px;border:1px dashed var(--line);border-radius:12px;background:rgba(255,255,255,0.02)}
+    .rank .icon{font-size:20px;line-height:1}
+    .rank strong{display:block}
+    .ranks-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .ranks-grid .rank{grid-column:span 12}
+    @media(min-width:860px){
+      .ranks-grid .rank{grid-column:span 6}
+    }
+    @media(min-width:1080px){
+      .ranks-grid .rank{grid-column:span 4}
+    }
+    .footer{margin-top:32px;color:var(--muted);font-size:13px}
+    nav{display:flex;gap:8px;flex-wrap:wrap}
+    nav a{display:inline-block;text-decoration:none;padding:6px 10px;border:1px solid var(--line);border-radius:10px;color:var(--text);background:#10162a}
+    nav a:hover{border-color:var(--accent)}
+    .hr{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:18px 0}
+    details{background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+    summary{cursor:pointer;font-weight:600}
+    .tag{display:inline-block;margin:6px 6px 0 0;padding:2px 8px;border-radius:999px;background:#10162a;border:1px solid var(--line);font-size:12px;color:var(--muted)}
+    .callout{border:1px solid var(--line);border-radius:12px;padding:12px;background:linear-gradient(180deg,rgba(122,162,255,0.08),rgba(122,162,255,0.03))}
+    .checklist{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .checklist .item{grid-column:span 12;display:flex;gap:8px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:12px;background:#0f1427}
+    @media(min-width:860px){
+      .checklist .item{grid-column:span 6}
+    }
+    .ok{color:var(--ok)}
+    .warn{color:var(--warn)}
+    code{background:#10162a;border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <div class="logo">🏥</div>
+        <div>
+          <h1>Medical Department Fantasy City</h1>
+          <div class="muted">GTA 5 RP • 12-stufiges Rangsystem mit klaren Ausbildungswegen</div>
+        </div>
+      </div>
+      
+    </header>
+
+    <nav>
+      <a href="#ranks">Ränge</a>
+      <a href="#training">Ausbildung</a>
+      <a href="#badges">Abzeichen</a>
+      <a href="#downloads">Downloads</a>
+    </nav>
+
+    <div class="hr"></div>
+
+    <section id="ranks" class="card">
+      <h2>🚑 Rangsystem (12 Stufen)</h2>
+      <p class="muted">Realistisch inspiriert, RP-freundlich strukturiert: vom ersten Praktikum bis zur Department-Leitung.</p>
+
+      <div class="ranks-grid">
+        <div class="rank"><div><strong>1. Praktikant (Intern)</strong><span class="muted"> • Einstieg ohne Befugnisse, läuft bei erfahrenem Personal mit.</span></div></div>
+        <div class="rank"><div><strong>2. Rettungshelfer (First Responder)</strong><span class="muted"> • Einfache Erste Hilfe, Transporte, unterstützt am Einsatzort.</span></div></div>
+        <div class="rank"><div><strong>3. Rettungssanitäter (EMT-Basic)</strong><span class="muted"> • Stabilisierungen & Transporte, arbeitet unter Aufsicht.</span></div></div>
+        <div class="rank"><div><strong>4. Notfallsanitäter (EMT-Advanced)</strong><span class="muted"> • Fortgeschrittene Maßnahmen, verabreicht Medikamente unter Anleitung.</span></div></div>
+        <div class="rank"><div><strong>5. Leitender Sanitäter (Paramedic)</strong><span class="muted"> • Eigenständige Versorgung, leitet kleine Teams.</span></div></div>
+        <div class="rank"><div><strong>6. Stationssanitäter (Senior Paramedic)</strong><span class="muted"> • Koordiniert Einsätze & Mentoring.</span></div></div>
+        <div class="rank"><div><strong>7. Assistenzarzt (Resident)</strong><span class="muted"> • Klinikarbeit, erste OPs unter Aufsicht, Diagnostik.</span></div></div>
+        <div class="rank"><div><strong>8. Facharzt (Specialist Doctor)</strong><span class="muted"> • Spezialisierung (z. B. Chirurgie, Anästhesie).</span></div></div>
+        <div class="rank"><div><strong>9. Oberarzt (Attending Physician)</strong><span class="muted"> • Führt OPs, beaufsichtigt Fachärzte.</span></div></div>
+        <div class="rank"><div><strong>10. Chefarzt-Stellvertreter (Deputy CMO)</strong><span class="muted"> • Schichtplanung & Personal, übernimmt Schlüsselfälle.</span></div></div>
+        <div class="rank"><div><strong>11. Chefarzt (Chief Medical Officer)</strong><span class="muted"> • Höchster medizinischer Posten, Einsatz- & Klinikleitung.</span></div></div>
+        <div class="rank"><div><strong>12. Medical Director (Department Head)</strong><span class="muted"> • Gesamtverantwortung für Struktur, Regeln & RP-Qualität.</span></div></div>
+      </div>
+    </section>
+
+    <section id="training" class="card">
+      <h2>🎓 Ausbildung – Fokus auf die ersten 3 Ränge</h2>
+      <p class="muted">Jede Stufe enthält klare Lernziele, Theorie- & Praxisbausteine sowie eine RP-Prüfung.</p>
+
+      <div class="grid">
+        <div class="card span-6">
+          <h3>1) Praktikant (Intern)</h3>
+          <span class="pill">Ziel: Orientierung & Basics</span>
+          <details open>
+            <summary>Theorie</summary>
+            <ul class="list">
+              <li>Department-Struktur, Regeln, Funk- & Meldewesen.</li>
+              <li>Erste Hilfe: stabile Seitenlage, Blutstillung, Reanimation.</li>
+              <li>Fahrzeuge & Ausrüstung im Überblick.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Praxis</summary>
+            <ul class="list">
+              <li>Mind. 3 Einsätze mit Mentor begleiten.</li>
+              <li>Patientenaufnahme im Krankenhaus üben.</li>
+              <li>Funkgerät bedienen & korrekte Kommunikation.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Prüfung (RP)</summary>
+            <ul class="list">
+              <li>Simulierter Unfall: Patient stabilisieren & Transport anmelden.</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="card span-6">
+          <h3>2) Rettungshelfer (First Responder)</h3>
+          <span class="pill">Ziel: einfache Einsätze selbst führen</span>
+          <details open>
+            <summary>Theorie</summary>
+            <ul class="list">
+              <li>Grundlagen Anatomie (RP-tauglich).</li>
+              <li>Lebensrettende Sofortmaßnahmen (HLW, Atemwege, Blutung).</li>
+              <li>Einführung Medikamentenkunde (Basis: Schmerzmittel, Infusion).</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Praxis</summary>
+            <ul class="list">
+              <li>Mind. 5 Einsätze eigenständig unter Aufsicht.</li>
+              <li>Funkübungen mit Leitstelle (Lagemeldung).</li>
+              <li>Übung: Erstversorgung bei Autounfall oder Schussverletzung.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Prüfung (RP)</summary>
+            <ul class="list">
+              <li>Bewusstlose Person mit Blutverlust: Versorgung, Transport & Übergabe.</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="card span-6">
+          <h3>3) Rettungssanitäter (EMT-Basic)</h3>
+          <span class="pill">Ziel: Notfallpatienten stabilisieren & transportieren</span>
+          <details open>
+            <summary>Theorie</summary>
+            <ul class="list">
+              <li>Vitalzeichen & Assessment (Puls, RR, Atmung, Temperatur).</li>
+              <li>Notfallalgorithmen: <code>ABCDE</code>, Schock, Herz-Kreislaufstillstand.</li>
+              <li>Trauma-Grundlagen: Verkehrsunfall, Sturz, Schusswunde.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Praxis</summary>
+            <ul class="list">
+              <li>Mind. 10 Einsätze als verantwortlicher Erstversorger.</li>
+              <li>Reanimationsübung mit Defibrillator (RP).</li>
+              <li>Zusammenarbeit mit PD/FD bei Lagen mit mehreren Beteiligten.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Prüfung (RP)</summary>
+            <ul class="list">
+              <li>Szenario mit mehreren Verletzten (Triage, Priorisierung, Übergabe).</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="card span-6">
+          <h3>Ab Rang 4 – Spezialisierungen (optional)</h3>
+          <p class="muted">Diese Module sind Vorschläge, die du je nach Server-Regelwerk aktivieren kannst.</p>
+          <div class="checklist">
+            <div class="item"><span class="ok">✔</span><div><strong>Notfallmedizin+</strong><br><span class="muted">i.v.-Zugang, erweiterte Analgesie, Atemwegsmanagement (RP).</span></div></div>
+            <div class="item"><span class="ok">✔</span><div><strong>OP-Assistenz</strong><br><span class="muted">Vorbereitung & Assistenz bei Operationen (unter Aufsicht).</span></div></div>
+            <div class="item"><span class="ok">✔</span><div><strong>Intensivtransport</strong><br><span class="muted">Verlegung & Monitoring kritischer Patienten.</span></div></div>
+            <div class="item"><span class="ok">✔</span><div><strong>Leitstelle</strong><br><span class="muted">Disposition, Funkdisziplin, Einsatzführung kleiner Teams.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="badges" class="card">
+      <h2>🏅 Abzeichen (Symbole je Rang)</h2>
+      <p class="muted">Kompakt und erkennbar – perfekt für Discord-Rollen oder Ingame-Overlays.</p>
+      <div class="grid">
+        <div class="card span-4"><strong>1. Praktikant</strong><div class="muted">Weißes Namensschild</div></div>
+        <div class="card span-4"><strong>2. Rettungshelfer</strong><div class="muted">➕ Einfaches rotes Kreuz</div></div>
+        <div class="card span-4"><strong>3. Rettungssanitäter</strong><div class="muted">✚ Doppeltes rotes Kreuz</div></div>
+        <div class="card span-4"><strong>4. Notfallsanitäter</strong><div class="muted">⭐ + Kreuz</div></div>
+        <div class="card span-4"><strong>5. Leitender Sanitäter</strong><div class="muted">⭐⭐ + Kreuz</div></div>
+        <div class="card span-4"><strong>6. Stationssanitäter</strong><div class="muted">⭐⭐⭐ + Kreuz</div></div>
+        <div class="card span-4"><strong>7. Assistenzarzt</strong><div class="muted">⚕️ Äskulapstab</div></div>
+        <div class="card span-4"><strong>8. Facharzt</strong><div class="muted">⚕️ + ⭐</div></div>
+        <div class="card span-4"><strong>9. Oberarzt</strong><div class="muted">⚕️ + ⭐⭐</div></div>
+        <div class="card span-4"><strong>10. Deputy CMO</strong><div class="muted">⚕️ + ⭐⭐⭐</div></div>
+        <div class="card span-4"><strong>11. CMO</strong><div class="muted">⚕️ + ⭐⭐⭐⭐</div></div>
+        <div class="card span-4"><strong>12. Director</strong><div class="muted">👑 + ⚕️</div></div>
+      </div>
+      <div class="callout" style="margin-top:10px">
+        💡 <strong>Tipp:</strong> Du kannst diese Icons als Emojis übernehmen oder auf Basis dieser Liste eigene PNG/SVG-Abzeichen designen.
+      </div>
+    </section>
+
+    <section id="downloads" class="card">
+      <h2>📦 Download & Nutzung</h2>
+      <p>Diese Seite ist komplett eigenständig (keine externen Libraries). Du kannst sie direkt als <strong>Richtlinie</strong> für dein Department veröffentlichen oder in ein Wiki kopieren.</p>
+      <ul class="list">
+        <li>Ränge & Zuständigkeiten sind klar beschrieben.</li>
+        <li>Ausbildungswege für die ersten drei Ränge inklusive RP-Prüfung.</li>
+        <li>Optionale Spezialisierungen ab Rang 4.</li>
+      </ul>
+      <p class="muted">Wenn du möchtest, erweitere ich das Dokument um <em>Checklisten zum Ausdrucken</em>, <em>Dienstprotokolle</em> oder <em>ein Bewerbungsformular</em>.</p>
+    </section>
+
+    <div class="footer">
+      <div>© 2025 Medical Department Fantasy City</div>
+    </div>
+  </div>
+</body>
+</html>
